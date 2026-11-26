@@ -1,29 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Simple Form</title>
+    <title>Nested Table Example</title>
 </head>
-<body>
-  <h1>Simple Form</h1>
-  <form action="#" method="post">
-    <div>
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
-    </div>
-    <br>
-    <div>
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-    </div>
-    <br>
-    <div>
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" rows="4"></textarea>
-    </div>
-    <br>
-    <button type="submit">Submit</button>
-  </form>
+<form>
+<label for="First name">First name</label>
+<input id="First name" type="text" placeholder="Enter your first name"></input><br>
+<label for="Last name">Last name</label>
+<input id="Last name" type="text" placeholder="Enter your Last name"></input><br>
+<label for="email">Email</label>
+<input id="email" type="email" placeholder="Enter your email"></input><br>
+<label for="pass">Password</label>
+<input id="pass" type="password"></input><br>
+<label for="gender">Gender: </label>
+<input type="radio" value="male" name="gender"> Male 
+<input  type="radio" value="Female" name="gender"> Female
+<input type="radio" value="other" name="gender"> Other
+</form><br>
+Nationality:<br>
+<select>
+<option> Nepali</option>
+<option selected> Japanese</option>
+<option> korean</option>
+</select><br>
+Date: 
+<input type="datetime-local">
+<h3>Select your hobbies:</h3>
+
+    <input type="checkbox" id="anime" name="hobby" value="anime">
+    <label for="anime">Anime</label><br>
+
+    <input type="checkbox" id="reading" name="hobby" value="Reading">
+    <label for="reading">Reading</label><br>
+
+    <input type="checkbox" id="gaming" name="hobby" value="Gaming">
+    <label for="gaming">Gaming</label><br>
+
+    <input type="checkbox" id="music" name="hobby" value="Music">
+    <label for="music">Music</label><br>
+
+<textarea placeholder="Enter about yourself"></textarea><br>
+<button onclick="submit">Submit</button>
+<input type="reset" value="reset"></input>
 </body>
 </html>
+
